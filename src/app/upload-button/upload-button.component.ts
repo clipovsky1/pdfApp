@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-upload-button',
@@ -9,4 +9,20 @@ import { Component } from '@angular/core';
 })
 export class UploadButtonComponent {
 
+  onFileSelected(event: any) {
+    if (event) {
+    console.log(event);
+    const file: File = event.target.files.item(0);
+    console.log(this.isPdf(file));
+    }
+  }
+
+  isPdf(file: File) {
+    console.log(file); 
+    if (file) {
+    return file.type === 'application/pdf';
+    }
+    return undefined;
+  }
+  
 }

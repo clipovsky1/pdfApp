@@ -1,0 +1,24 @@
+.upload-card {
+    max-width: auto;
+    min-height: 400px;
+}
+.card-header {
+    display: inline;
+}
+
+.card-content {
+    min-height: 300px;
+    background-color: whitesmoke;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-actions {
+    display: inline;
+}
+
+.single-file-upload {
+    text-align: center;
+}

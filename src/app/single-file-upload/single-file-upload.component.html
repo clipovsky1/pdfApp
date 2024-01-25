@@ -1,0 +1,9 @@
+<div>
+    <button 
+        mat-button color="primary"
+        (click)="fileInput.click()">
+        <p style="display: inline;">Upload</p>
+        <img src="assets/upload-file.svg">
+    </button>
+    <input type="file" (input)="fileSelect($event)" accept="application/pdf" style="display:none" #fileInput>
+</div>
